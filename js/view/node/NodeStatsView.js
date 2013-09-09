@@ -240,11 +240,6 @@ var NodeStatView = Backbone.View.extend(
                 this.jvmnonheapchart = chart.draw("#chart-jvmnonheap", this.jvmnonheapdata, chart.jvmHeap.options());
                 this.jvmnonheapchart.setData([this.jvmnonheapdata]);
 
-                console.log(nodeStat);
-                console.log(indices);
-                console.log(this.indexdata);
-                console.log(chart);
-
                 // indices
                 // this.indexdata = chart.addData(this.indexdata, [new Date().getTime() + 1, indices.indexing.index_total]);
                 // this.indexdata.push([now, indices.indexing.index_total]);
