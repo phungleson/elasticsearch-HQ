@@ -244,21 +244,18 @@ var NodeStatView = Backbone.View.extend(
                 // indices
                 this.indexdata = chart.addData(this.indexdata, [new Date().getTime() + 1, indices.indexing.index_total]);
                 this.indexdata.push([now, indices.indexing.index_total]);
-
-                console.log(nodeStat);
-                console.log(indices);
-                console.log(this.indexdata);
-                console.log(chart);
-                console.log(chart.indices);
-                console.log(chart.indices.options());
-
-                this.indexchart = chart.draw("#chart-index", this.indexdata, chart.indices.options());
+                // this.indexchart = chart.draw("#chart-index", this.indexdata, chart.indices.options());
                 // this.indexchart.setData([this.indexdata]);
                 // 
                 // this.getdata = chart.addData(this.getdata, [new Date().getTime() + 1, indices.get.total]);
                 // this.getdata.push([now, indices.get.total]);
                 // this.getchart = chart.draw("#chart-indexget", this.getdata, chart.indices.options());
                 // this.getchart.setData([this.getdata]);
+
+                console.log(nodeStat);
+                console.log(indices);
+                console.log(this.indexdata);
+                console.log(chart);
 
                 //os
                 var usedCPU = osStats.cpu.user + osStats.cpu.sys;
